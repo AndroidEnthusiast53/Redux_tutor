@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech_stack.test">
+
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.tech_stack"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.tech_stack"/>
+</manifest>
